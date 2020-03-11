@@ -1,16 +1,4 @@
-cache: bundler
-
-jobs:
-  include:
-    - stage: prepare cache
-      script: true
-      rvm: 2.3
-    - stage: test
-      script: bundle show
-      rvm: 2.3
-    - stage: test
-      script: bundle show
-      rvm: 2.3
-    - stage: test
-      script: bundle show
-      rvm: 2.3
+language: node_js
+after_success: echo "Finished"
+script:
+  - exit 0
